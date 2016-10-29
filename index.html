@@ -14,7 +14,14 @@
 				<ul>
 					<li><a href="#">KONTAKT</a></li>
 					<li><a href="#">GALERIA</a></li>
-					<li><a href="#">O FIRMIE</a></li>
+					<li class="dropdown"><a href="#" class="dropbtn">O FIRMIE</a>
+							<div class="dropdown-content">
+							  <p>&#9650;</p>
+						      <a href="#">Aktualności</a>
+						      <a href="#">Nasz team</a>
+						      <a href="#">Historia</a>
+						    </div>
+					</li>
 					<div style="clear:both"></div>
 				</ul>		
 			</nav>
@@ -148,9 +155,10 @@
 			</div>
 			<div class="right-box">
 				<img src="images/red_chair.png">
-				<div id="checkbox">
-					<div class="checkbox"></div>
-					<p>Zgadzam się na przetwarzanie <br>danych osobowych</p>
+				<div>
+						<input type="checkbox" id="c1" name="cc" />
+						<label for="c1"><span></span><p>Zgadzam się na przetwarzanie danych osobowych</p></label>
+						
 				</div>	
 				<div style="clear:both"></div>
 				<input type="button" value="WYŚLIJ"/>
