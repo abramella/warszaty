@@ -1,179 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>CodersLab</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
+
 <body>
-	<header class="black">
-		<div class="container">
-			<div class="logo">SIT <span class="color">ON</span> CHAIR</div>
-			<nav>
-				<ul>
-					<li><a href="#">KONTAKT</a></li>
-					<li><a href="#">GALERIA</a></li>
-					<li class="dropdown"><a href="#" class="dropbtn">O FIRMIE</a>
-							<div class="dropdown-content">
-							  <p>&#9650;</p>
-						      <a href="#">Aktualności</a>
-						      <a href="#">Nasz team</a>
-						      <a href="#">Historia</a>
-						    </div>
-					</li>
-					<div style="clear:both"></div>
-				</ul>		
-			</nav>
-		</div>
-	</header>
-	<section id="slajder">
-		<div class="container">
-			<div class="arrow"> < </div>
-			<div class="arrow2"> > </div>
-			<div class="box">
-				<img src="images/black_chair.png">
-			</div>
-			<div class="box info">
-				<h1>SIT <span class="color">ON </span> OUR CHAIR</h1>
-				<p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. 
-				Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia </p>
-				<input type="button" value="ZOBACZ WIĘCEJ"/>
-			</div>
-			<div style="clear:both"></div>
-			
-		</div>
-	</section>
-	<section id="galeria">
-		<div class="container margin">
-			<div class="box3 first">
-				<div class="img1">
-					<div class="title">
-						<h3 class="after">Chair CLAIR</h3>
-					</div>
-				</div>	
-			</div>
-			<div class="box3">
-				<div class="img2">
-					<div class="title">
-						<h3 class="after">Chair MARGARITA</h3>
-					</div>
-				</div>
-			</div>
-			<div class="box3 last">
-				<div>
-					<h3 class="after">Finds all inputs</h3>
-					<p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. 
-						Został po raz pierwszy użyty w XV w. przez nieznanego</p><br>
-					<p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. 
-					przez nieznanego</p>
-				</div>
-			</div>
-			<div style="clear:both"></div>
-		</div>
-	</section>
-	<section id="price">
-		<div class="container">
-			<div class="box3 first section-title">
-				<h3 class="after margin">CENNIK</h3>
-			</div>
-			<div style="clear:both"></div>
-		</div>
-		<div class="container">
-			<div class="box3 first ">
-				<div>
-					<div class="circle">
-						<div class="small-circle"></div>
-					</div>
-					<span >BASIC PLAN</span>
-					<div class="cena">
-						<p class="number">85<sup>99</sup></p>
-						<p class="zl">PLN/MSC</p>
-					</div>
-					<div class="features">
-						<div >Zakup towaru + dowóz</div>
-						<div >Serwis</div>
-					</div>
-					<input class="join" type="button" value="DOŁĄCZ"/>
-				</div>
-			</div>
-			<div class="box3">
-				<div class="bacg-color">
-					<div class="circle bacg-color">
-						<div class="small-circle white"></div>
-					</div>
-					<span style="color:white">STANDARD PLAN</span>
-					<div class="cena">
-						<p class="number" style="color:#24baa0">95<sup>99</sup></p>
-						<p class="zl color" style="color:#24baa0">PLN/MSC</p>
-					</div>
-					<div class="features">
-						<div>Zakup towaru + dowóz</div>
-						<div>Serwis</div>
-						<div>Gwarancja 5 lat</div>
-					</div>
-					<input class="join " type="button" value="DOŁĄCZ" style="background-color:white; color:#24baa0"/>
-				</div>
-			</div>
-			<div class="box3 last">
-				<div>
-					<div class="circle">
-						<div class="small-circle"></div>
-					</div>
-					<span>ADVANCED PLAN</span>
-					<div class="cena">
-						<p class="number">211<sup class="sup-big">00</sup></p>
-						<p class="zl">PLN/MSC</p>
-					</div>
-					<div class="features">
-						<div>Zakup towaru + dowóz</div>
-						<div>Serwis</div>
-						<div>Gwarancja 6 lat</div>
-						<div>Porady projektanta</div>
-					</div>
-					<input class="join" type="button" value="DOŁĄCZ"/>
-				</div>
-			</div>
+    <header class="black">
+        <div class="container">
+            <div class="logo">SIT <span class="color">ON</span> CHAIR</div>
+            <nav>
+                <ul>
+                    <li><a href="#">KONTAKT</a></li>
+                    <li><a href="#">GALERIA</a></li>
+                    <li class="dropdown"><a href="#" class="dropbtn">O FIRMIE</a>
+                        <div class="dropdown-content">
+                            <p>&#9650;</p>
+                            <a href="#">Aktualności</a>
+                            <a href="#">Nasz team</a>
+                            <a href="#">Historia</a>
+                        </div>
+                    </li>
+                    <div style="clear:both"></div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="slajder">
+        <div class="container">
+            <div class="arrow">
+                < </div>
+                    <div class="arrow2"> > </div>
+                    <div class="box">
+                        <div class="chairSlider">
+                            <ul>
+                                <li><img src="images/black_chair.png"></li>
+                                <li><img src="images/orange.png"></li>
+                                <li><img src="images/red.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box info">
+                        <h1>SIT <span class="color">ON </span> OUR CHAIR</h1>
+                        <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia </p>
+                        <input type="button" value="ZOBACZ WIĘCEJ" />
+                    </div>
+                    <div style="clear:both"></div>
+            </div>
+    </section>
+    <section id="galeria">
+        <div class="container margin">
+            <div class="box3 first">
+                <div class="img1">
+                    <div class="title chair_title">
+                        <h3 class="after">Chair CLAIR</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="img2">
+                    <div class="title chair_title">
+                        <h3 class="after">Chair MARGARITA</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box3 last">
+                <div>
+                    <h3 class="after">Finds all inputs</h3>
+                    <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego</p><br>
+                    <p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. przez nieznanego</p>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+    </section>
+    <section id="price">
+        <div class="container">
+            <div class="box3 first section-title">
+                <h3 class="after margin">CENNIK</h3>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="container">
+            <div class="box3 first ">
+                <div>
+                    <div class="circle">
+                        <div class="small-circle"></div>
+                    </div>
+                    <span>BASIC PLAN</span>
+                    <div class="cena">
+                        <p class="number">85<sup>99</sup></p>
+                        <p class="zl">PLN/MSC</p>
+                    </div>
+                    <div class="features">
+                        <div>Zakup towaru + dowóz</div>
+                        <div>Serwis</div>
+                    </div>
+                    <input class="join" type="button" value="DOŁĄCZ" />
+                </div>
+            </div>
+            <div class="box3">
+                <div class="bacg-color">
+                    <div class="circle bacg-color">
+                        <div class="small-circle white"></div>
+                    </div>
+                    <span style="color:white">STANDARD PLAN</span>
+                    <div class="cena">
+                        <p class="number" style="color:#24baa0">95<sup>99</sup></p>
+                        <p class="zl color" style="color:#24baa0">PLN/MSC</p>
+                    </div>
+                    <div class="features">
+                        <div>Zakup towaru + dowóz</div>
+                        <div>Serwis</div>
+                        <div>Gwarancja 5 lat</div>
+                    </div>
+                    <input class="join " type="button" value="DOŁĄCZ" style="background-color:white; color:#24baa0" />
+                </div>
+            </div>
+            <div class="box3 last">
+                <div>
+                    <div class="circle">
+                        <div class="small-circle"></div>
+                    </div>
+                    <span>ADVANCED PLAN</span>
+                    <div class="cena">
+                        <p class="number">211<sup class="sup-big">00</sup></p>
+                        <p class="zl">PLN/MSC</p>
+                    </div>
+                    <div class="features">
+                        <div>Zakup towaru + dowóz</div>
+                        <div>Serwis</div>
+                        <div>Gwarancja 6 lat</div>
+                        <div>Porady projektanta</div>
+                    </div>
+                    <input class="join" type="button" value="DOŁĄCZ" />
+                </div>
+            </div>
 
-			<div style="clear:both"></div>
-		</div>
-	</section>
-<footer>
-	<div class="container">
-			<div class="box3 first section-title">
-				<h3 class="after margin">KONTAKT</h3>
-			</div>
-	<div style="clear:both"></div>
-	</div>
-		<div class="container">
-			
-			<div class="double-box section-title">
-				<input name="imie"  type="text" placeholder="Imię"/>
-				<input name="email"  type="email" placeholder="Email"/>
-				<textarea placeholder="Wiadomość"></textarea>
-				<p class="arr">Coopiright 2014 | All rights reserved - Sit on Chair</p>
-			</div>
-			<div class="right-box">
-				<img src="images/red_chair.png">
-				<div>
-						<input type="checkbox" id="c1" name="cc" />
-						<label for="c1"><span></span><p>Zgadzam się na przetwarzanie danych osobowych</p></label>
-						
-				</div>	
-				<div style="clear:both"></div>
-				<input type="button" value="WYŚLIJ"/>
-				<div style="clear:both"></div>
-				<div class="icons">
-					<img src="images/flickr.png">
-					<img src="images/vimeo.png">
-					<img src="images/pinterest.png">
-					<img src="images/twitter.png">
-					<p>SIT <span>ON</span> CHAIR</p>
-				</div>
-			
-			</div>
-		</div>
-	</footer>
+            <div style="clear:both"></div>
+        </div>
+    </section>
+    <!--sekcja zapożyczona do zadania z js-->
+    <section class="application ">
+        <div class="container">
 
+            <section class="choice_part inline">
+                <h3 class="after margin">SKOMPONUJ SWOJE KRZESŁO</h3>
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <form class="list_panel first">
+                            <option>Clair</option>
+                            <option>Margarita</option>
+                            <option>Selena</option>
+                        </form>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <form class="list_panel second
+                               ">
+                            <option>Czerwony</option>
+                            <option>Czarny</option>
+                            <option>Pomarańczowy</option>
+                        </form>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <form class="list_panel third">
+                            <option>Tkanina</option>
+                            <option>Skóra</option>
+                        </form>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <!--<div class="checkbox"></div>-->
+                    <!--<span class="list_label inline_text">Transport</span>-->
+                </div>
+
+            </section>
+
+            <section class="image_part inline">
+                <img src="images/red_chair.png">
+            </section>
+
+            <section class="summary_part inline">
+                <header class="align_right">
+                    <h3 class="after margin">PODSUMOWANIE</h3>
+                </header>
+
+                <div class="summary_panel">
+                    <div class="panel_left">
+                        <h4 class="title2">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title3 value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                </div>
+                <a href="" class="green_button">Zamawiam</a>
+            </section>
+
+        </div>
+    </section>
+    <!--koniec sekcji zapożyczonej do zadania z js-->
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="box3 first section-title">
+                <h3 class="after margin">KONTAKT</h3>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="container">
+
+            <div class="double-box section-title">
+                <input name="imie" type="text" placeholder="Imię" />
+                <input name="email" type="email" placeholder="Email" />
+                <textarea placeholder="Wiadomość"></textarea>
+                <p class="arr">Coopiright 2014 | All rights reserved - Sit on Chair</p>
+            </div>
+            <div class="right-box">
+                <img src="images/red_chair.png">
+                <div>
+                    <input type="checkbox" id="c1" name="cc" />
+                    <label for="c1"><span></span><p>Zgadzam się na przetwarzanie danych osobowych</p></label>
+
+                </div>
+                <div style="clear:both"></div>
+                <input type="button" value="WYŚLIJ" />
+                <div style="clear:both"></div>
+                <div class="icons">
+                    <img src="images/flickr.png">
+                    <img src="images/vimeo.png">
+                    <img src="images/pinterest.png">
+                    <img src="images/twitter.png">
+                    <p>SIT <span>ON</span> CHAIR</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
