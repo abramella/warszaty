@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var arrows = document.querySelectorAll('span.list_arrow');
 
     var listPanel = document.querySelectorAll('.list_panel');
-    console.log(listPanel);
+    //console.log(listPanel);
 
     var sumAll = document.querySelector('.sum');
 
@@ -127,67 +127,74 @@ document.addEventListener("DOMContentLoaded", function () {
         sum = colorPr + patternPr + titlePr + parseFloat(transportPrice);
         return sum;
     }
-
-
     nameOption[0].addEventListener('click', function () {
         title.innerHTML = "Clair CHAIR";
         chairsImg.setAttribute("src", "images/red_chair.png");
-        titlePr = 200;
+        titlePr = parseFloat(this.dataset.titlePrice);
         titleValue.innerHTML = titlePr;
         sumAll.innerHTML = summAllPr();
+        listPanel[0].style.display = "none";
+
     });
 
     nameOption[1].addEventListener('click', function () {
         title.innerHTML = "Margarita CHAIR";
-        titlePr = 300;
+        titlePr = parseFloat(this.dataset.titlePrice);
         titleValue.innerHTML = titlePr;
         chairsImg.style.width = "95%";
         chairsImg.setAttribute("src", "images/orange.png");
         sumAll.innerHTML = summAllPr();
+        listPanel[0].style.display = "none";
     });
 
     nameOption[2].addEventListener('click', function () {
         title.innerHTML = "Selena CHAIR";
         chairsImg.style.width = "95%";
         chairsImg.setAttribute("src", "images/black_chair.png");
-        titlePr = 400;
+        titlePr = parseFloat(this.dataset.titlePrice);
         titleValue.innerHTML = titlePr;
         sumAll.innerHTML = summAllPr();
+        listPanel[0].style.display = "none";
     });
 
     colorOption[0].addEventListener('click', function () {
         placeForColor.innerHTML = "Czerwony";
-        colorPr = 20;
+        colorPr = parseFloat(this.dataset.colorPrice);
         placeForColorValue.innerHTML = colorPr;
         sumAll.innerHTML = summAllPr();
+        listPanel[1].style.display = "none";
     });
 
     colorOption[1].addEventListener('click', function () {
         placeForColor.innerHTML = "Czarny";
-        colorPr = 50;
+        colorPr = parseFloat(this.dataset.colorPrice);
         placeForColorValue.innerHTML = colorPr;
         sumAll.innerHTML = summAllPr();
+        listPanel[1].style.display = "none";
     });
 
     colorOption[2].addEventListener('click', function () {
         placeForColor.innerHTML = "Pomarańczowy";
-        colorPr = 30;
+        colorPr = parseFloat(this.dataset.colorPrice);
         placeForColorValue.innerHTML = colorPr;
         sumAll.innerHTML = summAllPr();
+        listPanel[1].style.display = "none";
     });
 
     patternOption[0].addEventListener('click', function () {
         placeForPattern.innerHTML = "Tkanina";
-        patternPr = 50;
+        patternPr = parseFloat(this.dataset.patternPrice);
         placeForPatternValue.innerHTML = patternPr;
         sumAll.innerHTML = summAllPr();
+        listPanel[2].style.display = "none";
     });
 
     patternOption[1].addEventListener('click', function () {
         placeForPattern.innerHTML = "Skóra";
-        patternPr = 50;
+        patternPr = parseFloat(this.dataset.patternPrice);
         placeForPatternValue.innerHTML = patternPr;
         sumAll.innerHTML = summAllPr();
+        listPanel[2].style.display = "none";
     });
 
 
